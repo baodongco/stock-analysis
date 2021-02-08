@@ -4,6 +4,7 @@ var fs = require('fs');
 
 function scanCandlestick(data) {
     try {
+        console.log('data: ', data)
         var pattern = [];
         var oneDayInput = data.dayInput1
         var twoDayInput = data.dayInput2;

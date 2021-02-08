@@ -18,7 +18,7 @@ function sendMessage(senderId, message) {
         }
     }, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body)
+            console.log('body is: ', body)
             return body;
         } else {
             sendMessage(senderId, "Sending with error" + body)
@@ -44,7 +44,7 @@ function sendInternalMessage(message) {
         }
     }, function (error, response, body) {
         if (!error && response.statusCode == 200) {
-            console.log(body)
+            console.log('body is: ', body)
             return body;
         } else {
             sendInternalMessage(3206875339325393, "Sending with error: \n" + JSON.stringify(body))

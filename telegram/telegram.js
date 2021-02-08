@@ -21,7 +21,7 @@ function sendMessage(data, pattern) {
             photo: HOST + stockCode + '.png'
         })
             .then(function (data) {
-                console.log(data);
+                console.log('data: ', data);
             })
     } catch (err) {
         console.log(err);
